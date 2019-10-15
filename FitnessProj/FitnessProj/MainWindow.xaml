@@ -6,11 +6,20 @@
         xmlns:local="clr-namespace:FitnessProj"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23"  Text="Exercise type" Margin="268,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="268,189,0,0" TextWrapping="Wrap" Text="unit name" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="23" Margin="268,212,0,0" TextWrapping="Wrap" Text="Unit value" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="Save" HorizontalAlignment="Left"  Margin="293,270,0,0" VerticalAlignment="Top" Width="75"/>
-
+    <Grid Margin="0,0,0,0.5">
+        <TextBox x:Name="textBoxExerciseType" HorizontalAlignment="Left" Height="23"  Text="Exercise type" Margin="268,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxUnitName" HorizontalAlignment="Left" Height="23" Margin="268,189,0,0" TextWrapping="Wrap" Text="unit name" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxUnitValue" HorizontalAlignment="Left" Height="23" Margin="268,212,0,0" TextWrapping="Wrap" Text="Unit value" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Click="Button_Click" Content="Save" HorizontalAlignment="Left"  Margin="293,270,0,0" VerticalAlignment="Top" Width="75"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="424" Margin="0,-2,0,0" VerticalAlignment="Top" Width="62">
+            <MenuItem x:Name="Test" Click="Test_Click"  Height="60" Width="62">
+                <MenuItem.Header>
+                    <StackPanel Width="62" Height="60">
+                        <Image Source="gear.png" Height="59" Margin="0,0,10,0"/>
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="Test2" Click="Test2_Click"  Height="60" Width="62"></MenuItem>
+        </Menu>
     </Grid>
 </Window>

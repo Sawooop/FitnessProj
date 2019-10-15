@@ -23,6 +23,22 @@ namespace FitnessProj
         public MainWindow()
         {
             InitializeComponent();
+            List<FitnessType> FList = new List<FitnessType>();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("add button");
+        }
+
+        private void Test_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("test menu 1");
+        }
+
+        private void Test2_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("test menu 2");
         }
     }
 }
