@@ -23,12 +23,13 @@ namespace FitnessProj
         public MainWindow()
         {
             InitializeComponent();
-            List<FitnessType> FList = new List<FitnessType>();
+            List<FitnessType> fList = new List<FitnessType>();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("add button");
+            FitnessType newFitnessType = new FitnessType(textBoxExerciseType.Text, textBoxUnitName.Text, Convert.ToInt32(textBoxUnitValue.Text));
+            
         }
 
         private void Test_Click(object sender, RoutedEventArgs e)
