@@ -23,23 +23,41 @@ namespace FitnessProj
         public MainWindow()
         {
             InitializeComponent();
-            List<FitnessType> fList = new List<FitnessType>();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            FitnessType newFitnessType = new FitnessType(textBoxExerciseType.Text, textBoxUnitName.Text, Convert.ToInt32(textBoxUnitValue.Text));
-            
         }
 
         private void Test_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("test menu 1");
+            main.Content = new TestPage1();
         }
 
-        private void Test2_Click(object sender, RoutedEventArgs e)
+        private void AddMenu_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("test menu 2");
+            main.Content = new AddMenu();
+        }
+
+        private void Test3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Test4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Test5_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Test6_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Test7_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
