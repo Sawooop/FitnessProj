@@ -6,34 +6,19 @@
         xmlns:local="clr-namespace:FitnessProj"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="0,0,0,0.5">
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="424" Margin="0,-2,0,0" VerticalAlignment="Top" Width="62">
-            <MenuItem x:Name="Main" Click="Main_Click"  Height="60" Width="62">
+    <Viewbox Stretch="Fill">
 
-            </MenuItem>
-            <MenuItem x:Name="AddMenu" Click="AddMenu_Click"  Height="60" Width="60">
-                
-            </MenuItem>
-            <MenuItem x:Name="Test3" Click="Test3_Click" Height="60" Width="60">
-                
-            </MenuItem>
-            <MenuItem x:Name="Test4" Click="Test4_Click" Height="60" Width="60">
-
-            </MenuItem>
-            <MenuItem x:Name="Test5" Click="Test5_Click"  Height="60" Width="60">
-
-            </MenuItem>
-            <MenuItem x:Name="Test6" Click="Test6_Click" Height="60" Width="60">
-
-            </MenuItem>
-            <MenuItem x:Name="Test7" Click="Test7_Click"  Height="60" Width="60">
-                <MenuItem.Header>
-                    <StackPanel Width="60" Height="60">
-                        <Image Source="gear.png" Height="59" Margin="0,0,10,0"/>
-                    </StackPanel>
-                </MenuItem.Header>
-            </MenuItem>
-        </Menu>
-        <Frame x:Name="main" Content="TestPage1" HorizontalAlignment="Left" Height="424" Margin="62,-2,0,0" VerticalAlignment="Top" Width="733"/>
-    </Grid>
+        <Grid Margin="0,0,0,0.5">
+            <Menu x:Name="menu" HorizontalAlignment="Left" Height="424" Margin="0,-2,0,0" VerticalAlignment="Top" Width="62">
+                <MenuItem x:Name="Test" Click="Test_Click"  Height="60" Width="60"/>
+                <MenuItem x:Name="AddMenu" Click="AddMenu_Click"  Height="60" Width="60"/>
+                <MenuItem x:Name="Test3" Click="Test3_Click" Height="60" Width="60"/>
+                <MenuItem x:Name="Test4" Click="Test4_Click" Height="60" Width="60"/>
+                <MenuItem x:Name="Test5" Click="Test5_Click"  Height="60" Width="60"/>
+                <MenuItem x:Name="Test6" Click="Test6_Click" Height="60" Width="60"/>
+                <MenuItem x:Name="Test7" Click="Test7_Click"  Height="60" Width="60"/>
+            </Menu>
+            <Frame x:Name="main" NavigationUIVisibility="Hidden" Content="TestPage1" HorizontalAlignment="Left" Height="424" Margin="62,-2,0,0" VerticalAlignment="Top" Width="733"/>
+        </Grid>
+    </Viewbox>
 </Window>

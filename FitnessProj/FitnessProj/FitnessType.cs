@@ -11,12 +11,22 @@ namespace FitnessProj
         public string name;
         public string unitName;
         public int unitWorth;
+        public int numberOfUnits;
 
         public FitnessType(string Name, string UnitName, int UnitWorth)
         {
             name = Name;
             unitName = UnitName;
             unitWorth = UnitWorth;
+        }
+
+        public FitnessType()
+        {
+
+        }
+        public int TotalWorth()
+        {
+            return unitWorth * numberOfUnits;
         }
     }
 }
