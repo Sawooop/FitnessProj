@@ -9,6 +9,7 @@ namespace FitnessProj
     class Mood
     {
         int moodLvl;
+        bool isHappy;
         int totalPoints;
         PointsNeeded need = new PointsNeeded();
         FitnessType totalPointsInTotal = new FitnessType();
@@ -17,10 +18,22 @@ namespace FitnessProj
             totalPoints = totalPointsInTotal.TotalWorth();
             return totalPoints;
         }
+        public bool IsAvatarHappy()
+        {
+            if (totalPoints > need.PointsToBeHappy())
+            {
+                isHappy = true;
+            }
+            else
+            {
+                isHappy = false;
+            }
 
+            return isHappy;
+        }
         public int MoodLevel()
         {
-            moodLvl = totalPoints / need.PointsToBeHappy();
+            moodLvl = totalPoints / need.PointsToLevelUp();
             return moodLvl;
         }
         public double ProgressToNextLvl()

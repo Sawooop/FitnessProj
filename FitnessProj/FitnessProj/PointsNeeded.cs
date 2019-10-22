@@ -17,7 +17,12 @@ namespace FitnessProj
 
         public int PointsToBeHappy()
         {
-            return 5000;
+            return 8000;
+        }
+
+        public int PointsToLevelUp()
+        {
+            return 2000;
         }
     }
 }
