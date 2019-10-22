@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FitnessProj
+namespace FitnessProj.Menus
 {
     /// <summary>
-    /// Interaction logic for TestPage1.xaml
+    /// Interaction logic for MainMenu.xaml
     /// </summary>
-    public partial class TestPage1 : Page
+    public partial class MainMenu : Page
     {
-        public TestPage1()
+        public MainMenu()
         {
             InitializeComponent();
         }
