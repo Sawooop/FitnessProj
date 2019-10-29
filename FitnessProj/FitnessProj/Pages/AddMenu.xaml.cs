@@ -31,10 +31,11 @@ namespace FitnessProj
         {
             FitnessType newFitnessType = new FitnessType(textBoxExerciseType.Text, textBoxUnitName.Text, Convert.ToInt32(textBoxUnitValue.Text), Convert.ToInt32(textBoxUnitNumber.Text));
             fList.Add(newFitnessType);
-            MessageBox.Show(newFitnessType.name);
-            MessageBox.Show(newFitnessType.unitName);
-            MessageBox.Show(Convert.ToString(newFitnessType.unitWorth));
-            MessageBox.Show(Convert.ToString(newFitnessType.numberOfUnits));
+            MessageBox.Show(newFitnessType.toString());
+            //MessageBox.Show(newFitnessType.name);
+            //MessageBox.Show(newFitnessType.unitName);
+            //MessageBox.Show(Convert.ToString(newFitnessType.unitWorth));
+            //MessageBox.Show(Convert.ToString(newFitnessType.numberOfUnits));
             Globals.Progress = Mood.currentMood.ProgressToNextLvl();
         }
     }

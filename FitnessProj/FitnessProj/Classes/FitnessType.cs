@@ -29,5 +29,9 @@ namespace FitnessProj
         {
             return unitWorth * numberOfUnits;
         }
+        public string toString()
+        {
+            return "Fitness Name: " + name + "\nUnit of Fitness Name: "+unitName+"\nWorth of Each "+unitName+": "+Convert.ToString(unitWorth)+"\nNumber of "+unitName+" Done: "+Convert.ToString(numberOfUnits);
+        }
     }
 }

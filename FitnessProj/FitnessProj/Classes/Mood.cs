@@ -39,7 +39,7 @@ namespace FitnessProj
 
         public int ProgressToNextLvl()
         {
-            return (Convert.ToInt32(totalPoints / need.PointsToBeHappy()) - moodLvl) * 100;
+            return (Convert.ToInt32((totalPoints / need.PointsToBeHappy()) - moodLvl) * 100);
         }
         //fix below
         private static Mood _currentMood;
