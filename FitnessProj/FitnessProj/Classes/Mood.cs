@@ -28,7 +28,7 @@ namespace FitnessProj
         {
             return (Convert.ToInt32(totalPoints / need.PointsToBeHappy()) - moodLvl) * 100;
         }
-
+        //fix below
         private static Mood _currentMood;
 
         public static Mood currentMood {

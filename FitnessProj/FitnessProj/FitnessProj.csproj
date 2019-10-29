@@ -59,6 +59,7 @@
     <Compile Include="Pages\AddMenu.xaml.cs">
       <DependentUpon>AddMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WriteToTextFile.cs" />
     <Page Include="Pages\AddMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
