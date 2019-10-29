@@ -1,5 +1,7 @@
-﻿using System;
+﻿using FitnessProj.Pages;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,14 +27,19 @@ namespace FitnessProj
             InitializeComponent();
         }
 
-        private void Test_Click(object sender, RoutedEventArgs e)
+        private void MainMenu_Click(object sender, RoutedEventArgs e)
         {
-            main.Content = new TestPage1();
+            main.Content = new MainMenu();
         }
 
         private void AddMenu_Click(object sender, RoutedEventArgs e)
         {
             main.Content = new AddMenu();
+        }
+
+        private void SettingsMenu_Click(object sender, RoutedEventArgs e)
+        {
+            main.Content = new SettingsMenu();
         }
 
         private void Test3_Click(object sender, RoutedEventArgs e)
@@ -51,16 +58,6 @@ namespace FitnessProj
         }
 
         private void Test6_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Test7_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Main_Click(object sender, RoutedEventArgs e)
         {
 
         }

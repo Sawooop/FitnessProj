@@ -10,15 +10,15 @@
 
         <Grid Margin="0,0,0,0.5">
             <Menu x:Name="menu" HorizontalAlignment="Left" Height="424" Margin="0,-2,0,0" VerticalAlignment="Top" Width="62">
-                <MenuItem x:Name="Test" Click="Test_Click"  Height="60" Width="60"/>
+                <MenuItem x:Name="MainMenu" Click="MainMenu_Click"  Height="60" Width="60"/>
                 <MenuItem x:Name="AddMenu" Click="AddMenu_Click"  Height="60" Width="60"/>
                 <MenuItem x:Name="Test3" Click="Test3_Click" Height="60" Width="60"/>
                 <MenuItem x:Name="Test4" Click="Test4_Click" Height="60" Width="60"/>
                 <MenuItem x:Name="Test5" Click="Test5_Click"  Height="60" Width="60"/>
                 <MenuItem x:Name="Test6" Click="Test6_Click" Height="60" Width="60"/>
-                <MenuItem x:Name="Test7" Click="Test7_Click"  Height="60" Width="60"/>
+                <MenuItem x:Name="SettingsMenu" Click="SettingsMenu_Click"  Height="60" Width="60"/>
             </Menu>
-            <Frame x:Name="main" NavigationUIVisibility="Hidden" Content="TestPage1" HorizontalAlignment="Left" Height="424" Margin="62,-2,0,0" VerticalAlignment="Top" Width="733"/>
+            <Frame x:Name="main" NavigationUIVisibility="Hidden" Content="MainMenu" HorizontalAlignment="Left" Height="424" Margin="62,-2,0,0" VerticalAlignment="Top" Width="733"/>
         </Grid>
     </Viewbox>
 </Window>

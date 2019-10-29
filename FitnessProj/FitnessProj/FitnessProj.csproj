@@ -55,13 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddMenu.xaml.cs">
+    <Compile Include="Globals.cs" />
+    <Compile Include="Pages\AddMenu.xaml.cs">
       <DependentUpon>AddMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TestPage1.xaml.cs">
-      <DependentUpon>TestPage1.xaml</DependentUpon>
-    </Compile>
-    <Page Include="AddMenu.xaml">
+    <Page Include="Pages\AddMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -73,20 +75,26 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Class1.cs" />
-    <Compile Include="FitnessType.cs" />
+    <Compile Include="Classes\Class1.cs" />
+    <Compile Include="Classes\FitnessType.cs" />
+    <Compile Include="Pages\MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="TestPage1.xaml">
+    <Page Include="Pages\SettingsMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mood.cs" />
-    <Compile Include="PointsNeeded.cs" />
+    <Compile Include="Classes\Mood.cs" />
+    <Compile Include="Classes\PointsNeeded.cs" />
+    <Compile Include="Pages\SettingsMenu.xaml.cs">
+      <DependentUpon>SettingsMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -114,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

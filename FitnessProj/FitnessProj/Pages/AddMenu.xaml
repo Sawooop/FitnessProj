@@ -12,6 +12,7 @@
         <TextBox x:Name="textBoxExerciseType" HorizontalAlignment="Left" Height="23"  Text="Test type" Margin="268,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxUnitName" HorizontalAlignment="Left" Height="23" Margin="268,189,0,0" TextWrapping="Wrap" Text="unit name" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxUnitValue" HorizontalAlignment="Left" Height="23" Margin="268,212,0,0" TextWrapping="Wrap" Text="Unit value" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxUnitNumber" HorizontalAlignment="Left" Height="23" Margin="268,235,0,0" TextWrapping="Wrap" Text="Number of Units" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="button" Click="Button_Click" Content="Save" HorizontalAlignment="Left"  Margin="293,270,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Page>
