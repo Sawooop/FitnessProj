@@ -23,6 +23,6 @@ namespace FitnessProj
     {
         public List<FitnessType> writeList;
         
-        Convert.to
+        //Convert.to
     }
 }

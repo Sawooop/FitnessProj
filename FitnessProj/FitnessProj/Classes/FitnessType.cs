@@ -20,7 +20,7 @@ namespace FitnessProj
             unitWorth = UnitWorth;
             numberOfUnits = NumberOfUnits;
         }
-
+        
         public FitnessType()
         {
 
