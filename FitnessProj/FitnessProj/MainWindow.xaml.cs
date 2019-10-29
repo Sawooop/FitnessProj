@@ -59,5 +59,10 @@ namespace FitnessProj
         {
 
         }
+
+        private void Main_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
