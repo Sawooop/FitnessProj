@@ -25,17 +25,18 @@ namespace FitnessProj
             InitializeComponent();
         }
 
-        List<FitnessType> fList = new List<FitnessType>();
-
-        public void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             FitnessType newFitnessType = new FitnessType(textBoxExerciseType.Text, textBoxUnitName.Text, Convert.ToInt32(textBoxUnitValue.Text), Convert.ToInt32(textBoxUnitNumber.Text));
-            fList.Add(newFitnessType);
-            MessageBox.Show(newFitnessType.name);
-            MessageBox.Show(newFitnessType.unitName);
-            MessageBox.Show(Convert.ToString(newFitnessType.unitWorth));
-            MessageBox.Show(Convert.ToString(newFitnessType.numberOfUnits));
+            Globals.fList.Add(newFitnessType);
             Globals.Progress = Mood.currentMood.ProgressToNextLvl();
+            TextFile.write(Globals.fList);
+            Globals.Progress += newFitnessType.unitWorth;
+        }
+
+        private void Button_Click_Sync(object sender, RoutedEventArgs e)
+        {
+            TextFile.Read(Globals.fList);
         }
     }
 }

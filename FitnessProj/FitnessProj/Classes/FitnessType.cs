@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FitnessProj
 {
-    class FitnessType
+    public class FitnessType
     {
         public string name;
         public string unitName;

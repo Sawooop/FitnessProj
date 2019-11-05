@@ -9,10 +9,12 @@
       Title="AddMenu">
 
     <Grid>
-        <TextBox x:Name="textBoxExerciseType" HorizontalAlignment="Left" Height="23"  Text="Test type" Margin="268,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxUnitName" HorizontalAlignment="Left" Height="23" Margin="268,189,0,0" TextWrapping="Wrap" Text="unit name" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxUnitValue" HorizontalAlignment="Left" Height="23" Margin="268,212,0,0" TextWrapping="Wrap" Text="Unit value" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxUnitNumber" HorizontalAlignment="Left" Height="23" Margin="268,235,0,0" TextWrapping="Wrap" Text="Number of Units" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Click="Button_Click" Content="Save" HorizontalAlignment="Left"  Margin="293,270,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="textBoxExerciseType" HorizontalAlignment="Left" Height="56"  Text="Exercise Type" Margin="190,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxUnitName" HorizontalAlignment="Left" Height="56" Margin="448,70,0,0" TextWrapping="Wrap" Text="Exercise Name" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxUnitValue" HorizontalAlignment="left" Height="56" Margin="190,182,0,0" TextWrapping="Wrap" Text="Total Exercise Value" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxUnitNumber" HorizontalAlignment="Left" Height="56" Margin="448,182,0,0" TextWrapping="Wrap" Text="Number of Times done" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonSync" Content="Click to sync" Click="Button_Click_Sync" HorizontalAlignment="Left" Margin="619,316,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button" Click="Button_Click" Content="Save" HorizontalAlignment="Left"  Margin="343,280,0,0" VerticalAlignment="Top" Width="74"/>
+        <TextBlock x:Name="textBlockInfo" Text="This input is for your value of your exercise. For a balanced value, use 1 step = 1 point." HorizontalAlignment="Left" Margin="88,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"/>
     </Grid>
 </Page>

@@ -23,10 +23,23 @@ namespace FitnessProj
         public MainMenu()
         {
             InitializeComponent();
+            LevelBar.Value = Globals.Progress / 40;
+            textBlockLevel.Text = "Level: " + Globals.level;
+            textBlockProgress.Text = "Progress to next level: " + Globals.level + " / " + "4000";
+            while (Globals.Progress >= 4000)
+            {
+                Globals.Progress -= 4000;
+                Globals.level += 1;
+
+            }
         }
-        private void update()
+
+        private void TempDisplay_Click(object sender, RoutedEventArgs e)
         {
-            LevelBar.Value = Globals.Progress;
+            foreach(FitnessType f in Globals.fList)
+            {
+                MessageBox.Show("Exercise name: "+f.name + System.Environment.NewLine + "Exercise Name: " + f.unitName + Environment.NewLine + "Number of Times Done: " + f.numberOfUnits.ToString());
+            }
         }
     }
 }

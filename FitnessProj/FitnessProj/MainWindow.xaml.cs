@@ -25,6 +25,7 @@ namespace FitnessProj
         public MainWindow()
         {
             InitializeComponent();
+            main.Content = new MainMenu();
         }
 
         private void MainMenu_Click(object sender, RoutedEventArgs e)
@@ -42,9 +43,9 @@ namespace FitnessProj
             main.Content = new SettingsMenu();
         }
 
-        private void Test3_Click(object sender, RoutedEventArgs e)
+        private void LogBook_Click(object sender, RoutedEventArgs e)
         {
-
+            main.Content = new LogBook();
         }
 
         private void Test4_Click(object sender, RoutedEventArgs e)

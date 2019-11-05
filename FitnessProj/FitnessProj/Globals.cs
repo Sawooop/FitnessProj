@@ -9,5 +9,7 @@ namespace FitnessProj
     public static class Globals
     {
         public static int Progress = 0;
+        public static int level = 1;
+        public static List<FitnessType> fList = new List<FitnessType>();
     }
 }

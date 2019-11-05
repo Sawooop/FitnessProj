@@ -56,10 +56,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Globals.cs" />
+    <Compile Include="Pages\LogBook.xaml.cs">
+      <DependentUpon>LogBook.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AddMenu.xaml.cs">
       <DependentUpon>AddMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WriteToTextFile.cs" />
+    <Compile Include="TextFile.cs" />
+    <Page Include="Pages\LogBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AddMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
