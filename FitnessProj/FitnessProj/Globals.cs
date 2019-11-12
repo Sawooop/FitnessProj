@@ -11,5 +11,6 @@ namespace FitnessProj
         public static int Progress = 0;
         public static int level = 1;
         public static List<FitnessType> fList = new List<FitnessType>();
+        public static bool isDarkMode = true;
     }
 }

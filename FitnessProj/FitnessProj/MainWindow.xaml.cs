@@ -26,6 +26,15 @@ namespace FitnessProj
         {
             InitializeComponent();
             main.Content = new MainMenu();
+            if(Globals.isDarkMode == true)
+            {
+                var converter = new System.Windows.Media.BrushConverter();
+                var backgroundColor = (Brush)converter.ConvertFromString("#FF252526");
+                var textColor = (Brush)converter.ConvertFromString("#FFF1F1F1");
+                Background = backgroundColor;
+                MainMenu.Foreground = textColor;
+                //Color textColor = (Color)ColorConverter.ConvertFromString(); 
+            }
         }
 
         private void MainMenu_Click(object sender, RoutedEventArgs e)
