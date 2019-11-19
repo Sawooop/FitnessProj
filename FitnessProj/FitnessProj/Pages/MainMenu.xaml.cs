@@ -32,6 +32,7 @@ namespace FitnessProj
                 Globals.level += 1;
 
             }
+
         }
 
         private void TempDisplay_Click(object sender, RoutedEventArgs e)

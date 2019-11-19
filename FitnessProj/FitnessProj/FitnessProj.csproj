@@ -56,6 +56,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Globals.cs" />
+    <Compile Include="Pages\AvatarPage.xaml.cs">
+      <DependentUpon>AvatarPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LogBook.xaml.cs">
       <DependentUpon>LogBook.xaml</DependentUpon>
     </Compile>
@@ -63,6 +66,10 @@
       <DependentUpon>AddMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="TextFile.cs" />
+    <Page Include="Pages\AvatarPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\LogBook.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -83,7 +90,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classes\Class1.cs" />
     <Compile Include="Classes\FitnessType.cs" />
     <Compile Include="Pages\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>

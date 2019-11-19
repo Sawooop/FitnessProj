@@ -50,7 +50,7 @@ namespace FitnessProj
 
         private void Test4_Click(object sender, RoutedEventArgs e)
         {
-
+            main.Content = new AvatarPage();
         }
 
         private void Test5_Click(object sender, RoutedEventArgs e)
