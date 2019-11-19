@@ -24,5 +24,34 @@ namespace FitnessProj.Pages
         {
             InitializeComponent();
         }
+
+        private void DarkModeButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(Globals.isDarkMode == false)
+            {
+                Globals.isDarkMode = true;
+                if (Globals.isDarkMode == true)
+                {
+                    var converter = new System.Windows.Media.BrushConverter();
+                    var backgroundColor = (Brush)converter.ConvertFromString("#FF252526");
+                    var textColor = (Brush)converter.ConvertFromString("#FFF1F1F1");
+                    Background = backgroundColor;
+                    //MainMenu.Foreground = textColor;
+                    //Color textColor = (Color)ColorConverter.ConvertFromString(); 
+                }
+            } else
+            {
+                Globals.isDarkMode = false;
+                if (Globals.isDarkMode == true)
+                {
+                    var converter = new System.Windows.Media.BrushConverter();
+                    var backgroundColor = (Brush)converter.ConvertFromString("#FF252526");
+                    var textColor = (Brush)converter.ConvertFromString("#FFF1F1F1");
+                    Background = backgroundColor;
+                    //MainMenu.Foreground = textColor;
+                    //Color textColor = (Color)ColorConverter.ConvertFromString(); 
+                }
+            }
+        }
     }
 }

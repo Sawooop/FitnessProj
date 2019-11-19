@@ -33,10 +33,5 @@ namespace FitnessProj
             TextFile.write(Globals.fList);
             Globals.Progress += newFitnessType.unitWorth;
         }
-
-        private void Button_Click_Sync(object sender, RoutedEventArgs e)
-        {
-            TextFile.Read(Globals.fList);
-        }
     }
 }

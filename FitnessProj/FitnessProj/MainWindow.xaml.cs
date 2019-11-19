@@ -25,6 +25,7 @@ namespace FitnessProj
         public MainWindow()
         {
             InitializeComponent();
+            TextFile.Read(Globals.fList);
             main.Content = new MainMenu();
             if(Globals.isDarkMode == true)
             {
