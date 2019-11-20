@@ -55,7 +55,13 @@ namespace FitnessProj.Pages
                 LevelImage.Source = new BitmapImage(new Uri(@"C:\Users\admin\pictures\lvl6img.bmp"));
             }
             // ActivityVideo.Source
+            ActivityVideo.Stop();
             HeartbeatImage.Source = new BitmapImage(new Uri(@"C:\Users\admin\pictures\Big bois " + Globals.level + ".png"));
+        }
+
+        private void PlayVideo_Click(object sender, RoutedEventArgs e)
+        {
+            ActivityVideo.Play();
         }
     }
 }

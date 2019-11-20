@@ -15,8 +15,9 @@
             <ColumnDefinition Width="151*"/>
         </Grid.ColumnDefinitions>
         <Image Name ="LevelImage"  Stretch ="Fill" Height="394" VerticalAlignment="Top" Margin="0,29,66.4,0" HorizontalAlignment="Right" Width="361" Grid.ColumnSpan="2"/>
-        <MediaElement Name ="ActivityVideo" HorizontalAlignment="Left" Height="253" VerticalAlignment="Top" Width="358" Grid.ColumnSpan="2" Grid.Column="1" Margin="332,10,0,0"/>
-        <Image Name ="HeartbeatImage" HorizontalAlignment="Left" Height="172" VerticalAlignment="Top" Width="353" Grid.ColumnSpan="2" Grid.Column="1" Margin="337,268,0,0"/>
+        <MediaElement Name ="ActivityVideo" HorizontalAlignment="Left" Height="196" VerticalAlignment="Top" Width="331" Grid.ColumnSpan="2" Grid.Column="1" Margin="359,10,0,0"/>
+        <Image Name ="HeartbeatImage" HorizontalAlignment="Left" Height="161" VerticalAlignment="Top" Width="353" Grid.ColumnSpan="2" Grid.Column="1" Margin="337,279,0,0"/>
+        <Button Name ="PlayVideo" Content="Play" Grid.Column="2" HorizontalAlignment="Left" Height="68" Margin="9.6,206,0,0" VerticalAlignment="Top" Width="282" Click="PlayVideo_Click"/>
 
 
     </Grid>
