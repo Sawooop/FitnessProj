@@ -25,7 +25,7 @@ namespace FitnessProj
             List<string> listLines = new List<string>();
             foreach (FitnessType f in writeList)
             {
-                listLines.Add(f.name + "*" + f.unitName + "*" + f.unitWorth.ToString() + "*" + f.numberOfUnits.ToString() + "*");
+                listLines.Add(f.name + "*" + f.unitName + "*" + f.unitWorth.ToString() + "*" + f.numberOfUnits.ToString() + "*" + f.time.ToString() + "*");
             }
 
             string docPath =
@@ -47,7 +47,7 @@ namespace FitnessProj
                 String line = sr.ReadToEnd();
                 string[] converterArray = line.Split('*');
                 List<string> converterList = converterArray.ToList();
-                int mulitple = converterList.Count() / 4;
+                int mulitple = converterList.Count() / 5;
                 for (int i = 0; i < mulitple; i++)
                 {
                     FitnessType newItem = new FitnessType();
@@ -55,9 +55,10 @@ namespace FitnessProj
                     newItem.unitName = converterList[1];
                     newItem.unitWorth = Convert.ToInt32(converterList[2]);
                     newItem.numberOfUnits = Convert.ToInt32(converterList[3]);
+                    newItem.time = Convert.ToDateTime(converterList[4]);
                     Globals.Progress += newItem.unitWorth;
                     fList.Add(newItem);
-                    for (int ie = 0; ie < 4; ie++)
+                    for (int ie = 0; ie < 5; ie++)
                     {
                     converterList.Remove(converterList[0]);
                     }

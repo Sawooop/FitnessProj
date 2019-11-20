@@ -19,6 +19,8 @@ namespace FitnessProj
 
         public int unitWorth;
 
+        public DateTime time;
+
         public FitnessType(string Name, string UnitName, int UnitWorth, int NumberOfUnits)
         {
             name = Name;

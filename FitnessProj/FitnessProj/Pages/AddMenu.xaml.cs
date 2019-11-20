@@ -29,6 +29,7 @@ namespace FitnessProj
         {
             FitnessType newFitnessType = new FitnessType(textBoxExerciseType.Text, textBoxUnitName.Text, Convert.ToInt32(textBoxUnitValue.Text), Convert.ToInt32(textBoxUnitNumber.Text));
             Globals.fList.Add(newFitnessType);
+            newFitnessType.time = DateTime.Now;
             Globals.Progress = Mood.currentMood.ProgressToNextLvl();
             TextFile.write(Globals.fList);
             Globals.Progress += newFitnessType.unitWorth;

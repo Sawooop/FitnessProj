@@ -34,10 +34,12 @@ namespace FitnessProj
             DataColumn name = new DataColumn("Name", typeof(string));
             DataColumn unitName = new DataColumn("Unit Name", typeof(string));
             DataColumn numberOfUnits = new DataColumn("Number Of Units", typeof(int));
+            DataColumn timeDone = new DataColumn("Time Logged", typeof(DateTime));
 
             log.Columns.Add(name);
             log.Columns.Add(unitName);
             log.Columns.Add(numberOfUnits);
+            log.Columns.Add(timeDone);
 
             foreach(FitnessType f in Globals.fList)
             {
@@ -45,6 +47,7 @@ namespace FitnessProj
                 newRow[0] = f.name;
                 newRow[1] = f.unitName;
                 newRow[2] = f.numberOfUnits;
+                newRow[3] = f.time;
                 log.Rows.Add(newRow);
             }
             dataGridLogBook.ItemsSource = log.DefaultView;
