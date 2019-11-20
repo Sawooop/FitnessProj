@@ -10,10 +10,13 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200*"/>
-            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="199*"/>
+            <ColumnDefinition Width="151*"/>
         </Grid.ColumnDefinitions>
-        <Image Name ="LevelImage"  Stretch ="Fill" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="400" Margin="99,0,0,-0.4" Grid.ColumnSpan="2"/>
+        <Image Name ="LevelImage"  Stretch ="Fill" Height="394" VerticalAlignment="Top" Margin="0,29,66.4,0" HorizontalAlignment="Right" Width="361" Grid.ColumnSpan="2"/>
+        <MediaElement Name ="ActivityVideo" HorizontalAlignment="Left" Height="253" VerticalAlignment="Top" Width="358" Grid.ColumnSpan="2" Grid.Column="1" Margin="332,10,0,0"/>
+        <Image Name ="HeartbeatImage" HorizontalAlignment="Left" Height="172" VerticalAlignment="Top" Width="353" Grid.ColumnSpan="2" Grid.Column="1" Margin="337,268,0,0"/>
 
 
     </Grid>
