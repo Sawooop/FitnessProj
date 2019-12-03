@@ -23,15 +23,16 @@ namespace FitnessProj
         public MainMenu()
         {
             InitializeComponent();
-            LevelBar.Value = Globals.Progress / 40;
-            textBlockLevel.Text = "Level: " + Globals.level;
-            textBlockProgress.Text = "Progress to next level: " + Globals.level + " / " + "4000";
             while (Globals.Progress >= 4000)
             {
                 Globals.Progress -= 4000;
                 Globals.level += 1;
 
             }
+
+            LevelBar.Value = Globals.Progress / 40;
+            textBlockLevel.Text = "Level: " + Globals.level;
+            textBlockProgress.Text = "Progress to next level: " + Globals.level + " / " + Globals.requiredProgress;
 
         }
 

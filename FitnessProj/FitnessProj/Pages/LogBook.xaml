@@ -9,13 +9,6 @@
       Title="LogBook">
 
     <Grid>
-        <DataGrid x:Name="fitnessDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Center" Height="430" VerticalAlignment="Center" Width="245" SelectionChanged="FitnessDataGrid_SelectionChanged" Margin="70,10,485,10">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="fitness name" Binding="{Binding name}"/>
-                <DataGridTextColumn Header="fitness type" Binding="{Binding unitName}"/>
-                <DataGridTextColumn Header="number of units" Binding="{Binding numberOfUnits}"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <Button x:Name="updateButton" Content="Update Button" HorizontalAlignment="Left" Margin="665,375,0,0" VerticalAlignment="Top" Width="93" Height="46" Click="UpdateButton_Click"/>
+        <DataGrid x:Name="dataGridLogBook" HorizontalAlignment="Left" Height="355" Margin="213,50,0,0" VerticalAlignment="Top" Width="351" Loaded="DataGridLogBook_Loaded"/>
     </Grid>
 </Page>
