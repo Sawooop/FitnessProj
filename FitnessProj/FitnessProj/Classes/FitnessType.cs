@@ -20,7 +20,10 @@ namespace FitnessProj
             unitWorth = UnitWorth;
             numberOfUnits = NumberOfUnits;
         }
-        
+        public string GetName()
+        {
+            return name;
+        }
         public FitnessType()
         {
 

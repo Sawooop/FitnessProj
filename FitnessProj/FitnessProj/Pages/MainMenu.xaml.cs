@@ -32,6 +32,9 @@ namespace FitnessProj
                 Globals.level += 1;
 
             }
+            LevelBar.Value = Globals.Progress / 40;
+            textBlockLevel.Text = "Level: " + Globals.level;
+            textBlockProgress.Text = "Progress to next level: " + Globals.level + " / " + Globals.requiredProgress;
 
         }
 
