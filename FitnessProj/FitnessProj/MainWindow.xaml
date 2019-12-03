@@ -7,8 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Viewbox Stretch="Fill">
-
-        <Grid Margin="0,0,0,0.5">
+        <Grid>
             <Menu x:Name="menu" HorizontalAlignment="Left" Height="424" Margin="0,0,0,0" VerticalAlignment="Top" Width="84">
                 <MenuItem x:Name="MainMenu" Header="Main Menu" Click="MainMenu_Click"  Height="60" Width="84"/>
                 <MenuItem x:Name="AddMenu" Header="Add Menu" Click="AddMenu_Click"  Height="60" Width="84"/>

@@ -25,7 +25,23 @@ namespace FitnessProj
         public MainWindow()
         {
             InitializeComponent();
+            TextFile.Read(Globals.fList);
             main.Content = new MainMenu();
+            if(Globals.isDarkMode == true)
+            {
+                var converter = new System.Windows.Media.BrushConverter();
+                var backgroundColor = (Brush)converter.ConvertFromString("#FF252526");
+                var textColor = (Brush)converter.ConvertFromString("#FFF1F1F1");
+                Background = backgroundColor;
+                MainMenu.Background = backgroundColor;
+                AddMenu.Background = backgroundColor;
+                LogBook.Background = backgroundColor;
+                Test4.Background = backgroundColor;
+                Test5.Background = backgroundColor;
+                Test6.Background = backgroundColor;
+                
+                //Color textColor = (Color)ColorConverter.ConvertFromString(); 
+            }
         }
 
         private void MainMenu_Click(object sender, RoutedEventArgs e)
