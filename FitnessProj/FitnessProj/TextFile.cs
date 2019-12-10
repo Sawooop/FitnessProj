@@ -40,7 +40,7 @@ namespace FitnessProj
 
         public static void Read(List<FitnessType> fList)
         {
-            string docPath =
+           string docPath =
             Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             using (StreamReader sr = new StreamReader(Path.Combine(docPath, "WriteLines.txt")))
             {
