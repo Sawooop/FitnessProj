@@ -12,7 +12,7 @@
                 <MenuItem x:Name="MainMenu" Header="Main Menu" Click="MainMenu_Click"  Height="60" Width="84"/>
                 <MenuItem x:Name="AddMenu" Header="Add Menu" Click="AddMenu_Click"  Height="60" Width="84"/>
                 <MenuItem x:Name="LogBook" Header="Log Book" Click="LogBook_Click" Height="60" Width="84"/>
-                <MenuItem x:Name="Test4" Click="Test4_Click" Height="60" Width="84"/>
+                <MenuItem x:Name="Test4" Header ="Avatar Page" Click="Test4_Click" Height="60" Width="84"/>
                 <MenuItem x:Name="Test5" Click="Test5_Click"  Height="60" Width="84"/>
                 <MenuItem x:Name="Test6" Click="Test6_Click" Height="60" Width="84"/>
                 <MenuItem x:Name="SettingsMenu" Header="Settings" Click="SettingsMenu_Click"  Height="60" Width="84"/>
