@@ -29,20 +29,18 @@ namespace FitnessProj.Pages
         {
             if(Globals.isDarkMode == false)
             {
-                Globals.isDarkMode = true;
-                if (Globals.isDarkMode == true)
-                {
+
                     var converter = new System.Windows.Media.BrushConverter();
                     var backgroundColor = (Brush)converter.ConvertFromString("#FF252526");
                     var textColor = (Brush)converter.ConvertFromString("#FFF1F1F1");
                     Background = backgroundColor;
-                    //MainMenu.Foreground = textColor;
-                    //Color textColor = (Color)ColorConverter.ConvertFromString(); 
-                }
+                //Globals.fList[Globals.fList.Count - 1].name
+                //Color textColor = (Color)ColorConverter.ConvertFromString(); 
+                //Globals.isDarkMode = true;
             } else
             {
                 Globals.isDarkMode = false;
-                if (Globals.isDarkMode == true)
+                if (Globals.isDarkMode == false)
                 {
                     var converter = new System.Windows.Media.BrushConverter();
                     var backgroundColor = (Brush)converter.ConvertFromString("#FF252526");

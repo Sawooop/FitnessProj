@@ -13,5 +13,7 @@ namespace FitnessProj
         public static List<FitnessType> fList = new List<FitnessType>();
         public static bool isDarkMode = false;
         public static int requiredProgress = Convert.ToInt32((level + 99) * 1.2);
+        public static List<Account> aList = new List<Account>();
+        public static int index = 0;
     }
 }

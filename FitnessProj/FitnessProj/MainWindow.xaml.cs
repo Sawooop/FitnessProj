@@ -25,8 +25,7 @@ namespace FitnessProj
         public MainWindow()
         {
             InitializeComponent();
-            TextFile.Read(Globals.fList);
-            main.Content = new MainMenu();
+            main.Content = new LoginMenu();
             if(Globals.isDarkMode == true)
             {
                 var converter = new System.Windows.Media.BrushConverter();
@@ -39,11 +38,13 @@ namespace FitnessProj
                 Test4.Background = backgroundColor;
                 Test5.Background = backgroundColor;
                 Test6.Background = backgroundColor;
+                menu.Foreground = backgroundColor;
+                MainMenu.Foreground = backgroundColor;
                 
                 //Color textColor = (Color)ColorConverter.ConvertFromString(); 
             }
         }
-
+        
         private void MainMenu_Click(object sender, RoutedEventArgs e)
         {
             main.Content = new MainMenu();

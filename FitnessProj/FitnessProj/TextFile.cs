@@ -20,6 +20,48 @@ namespace FitnessProj
 {
     class TextFile
     {
+        public static void writeAccount(List<Account> writeList)
+        {
+            List<string> listLines = new List<string>();
+            foreach (Account a in writeList)
+            {
+                listLines.Add(a.userName + "*" + a.password + "*" + a.index.ToString() + "*");
+            }
+
+            string docPath =
+              Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "AccountList.txt")))
+            {
+                foreach (string line in listLines)
+                    outputFile.WriteLine(line);
+            }
+        }
+        public static void readAccount(List<Account> aList)
+        {
+            string docPath =
+            Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            using (StreamReader sr = new StreamReader(Path.Combine(docPath, "AccountList.txt")))
+            {
+                String line = sr.ReadToEnd();
+                string[] converterArray = line.Split('*');
+                List<string> converterList = converterArray.ToList();
+                int mulitple = converterList.Count() / 3;
+                for (int i = 0; i < mulitple; i++)
+                {
+                    Account newAccount = new Account();
+                    newAccount.userName = converterList[0];
+                    newAccount.password = converterList[1];
+                    newAccount.index = Convert.ToInt32(converterList[2]);
+                    aList.Add(newAccount);
+                    for (int ie = 0; ie < 3; ie++)
+                    {
+                        converterList.Remove(converterList[0]);
+                    }
+
+                }
+            }
+        }
         public static void write(List<FitnessType> writeList)
         {
             List<string> listLines = new List<string>();
@@ -31,7 +73,7 @@ namespace FitnessProj
             string docPath =
               Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt")))
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, Globals.index + ".txt")))
             {
                 foreach (string line in listLines)
                     outputFile.WriteLine(line);
@@ -42,7 +84,7 @@ namespace FitnessProj
         {
             string docPath =
             Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            using (StreamReader sr = new StreamReader(Path.Combine(docPath, "WriteLines.txt")))
+            using (StreamReader sr = new StreamReader(Path.Combine(docPath, Globals.index + ".txt")))
             {
                 String line = sr.ReadToEnd();
                 string[] converterArray = line.Split('*');
