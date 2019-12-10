@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,10 +10,16 @@ namespace FitnessProj
 {
     public class FitnessType
     {
+
         public string name;
+
         public string unitName;
-        public int unitWorth;
+
         public int numberOfUnits;
+
+        public int unitWorth;
+
+        public DateTime time;
 
         public FitnessType(string Name, string UnitName, int UnitWorth, int NumberOfUnits)
         {
@@ -20,7 +28,10 @@ namespace FitnessProj
             unitWorth = UnitWorth;
             numberOfUnits = NumberOfUnits;
         }
-        
+        public string GetName()
+        {
+            return name;
+        }
         public FitnessType()
         {
 

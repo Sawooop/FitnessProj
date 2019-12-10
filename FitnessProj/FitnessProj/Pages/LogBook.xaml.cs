@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
 
 namespace FitnessProj
 {
@@ -24,23 +28,34 @@ namespace FitnessProj
         {
             InitializeComponent();
         }
-
-        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        void fillingDataGridUsingDataTable()
         {
-            FitnessType newTest = new FitnessType();
-            newTest.name = "bruh";
-            newTest.unitName = "bruhtest";
-            newTest.numberOfUnits = 5;
-            fitnessDataGrid.Items.Add(newTest);
-            //foreach(FitnessType f in Globals.fList)
-            //{
-              //  fitnessDataGrid.Items.Add(f);
-            //}
+            DataTable log = new DataTable();
+            DataColumn name = new DataColumn("Name", typeof(string));
+            DataColumn unitName = new DataColumn("Unit Name", typeof(string));
+            DataColumn numberOfUnits = new DataColumn("Number Of Units", typeof(int));
+            DataColumn timeDone = new DataColumn("Time Logged", typeof(DateTime));
+
+            log.Columns.Add(name);
+            log.Columns.Add(unitName);
+            log.Columns.Add(numberOfUnits);
+            log.Columns.Add(timeDone);
+
+            foreach(FitnessType f in Globals.fList)
+            {
+                DataRow newRow = log.NewRow();
+                newRow[0] = f.name;
+                newRow[1] = f.unitName;
+                newRow[2] = f.numberOfUnits;
+                newRow[3] = f.time;
+                log.Rows.Add(newRow);
+            }
+            dataGridLogBook.ItemsSource = log.DefaultView;
         }
 
-        private void FitnessDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void DataGridLogBook_Loaded(object sender, RoutedEventArgs e)
         {
-
+            this.fillingDataGridUsingDataTable();
         }
     }
 }

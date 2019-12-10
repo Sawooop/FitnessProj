@@ -8,7 +8,6 @@ namespace FitnessProj
 {
     class PointsNeeded
     {
-        int pointsToBeNeeded;
 
         public PointsNeeded()
         {
