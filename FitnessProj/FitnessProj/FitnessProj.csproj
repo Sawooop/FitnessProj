@@ -55,7 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Account.cs" />
     <Compile Include="Globals.cs" />
+    <Compile Include="LoginMenu.xaml.cs">
+      <DependentUpon>LoginMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AvatarPage.xaml.cs">
       <DependentUpon>AvatarPage.xaml</DependentUpon>
     </Compile>
@@ -66,6 +70,10 @@
       <DependentUpon>AddMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="TextFile.cs" />
+    <Page Include="LoginMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Pages\AvatarPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
