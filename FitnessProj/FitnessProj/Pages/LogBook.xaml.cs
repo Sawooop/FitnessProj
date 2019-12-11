@@ -57,5 +57,25 @@ namespace FitnessProj
         {
             this.fillingDataGridUsingDataTable();
         }
+
+        private void DataGridLogBook_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataGrid gd = (DataGrid)sender;
+            DataRowView rowSelected = gd.SelectedItem as DataRowView;
+            if(rowSelected != null)
+            {
+                foreach (FitnessType f in Globals.fList)
+                {
+                    if(rowSelected["Name"].ToString() == f.name && rowSelected["Unit Name"].ToString() == f.unitName)
+                    {
+                        Globals.fList.Remove(f);
+                        this.fillingDataGridUsingDataTable();
+                        TextFile.write(Globals.fList);
+                        return;
+                    }
+                }
+            }
+
+        }
     }
 }

@@ -51,5 +51,18 @@ namespace FitnessProj.Pages
                 }
             }
         }
+
+        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (Account a in Globals.aList)
+            {
+                if(a.index == Globals.index)
+                {
+                    Globals.aList.Remove(a);
+                    TextFile.Delete();
+                    return;
+                }
+            }
+        }
     }
 }

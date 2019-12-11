@@ -10,6 +10,7 @@
 
     <Grid>
         <Button x:Name="DarkModeButton" Content="Dark Mode" Click="DarkModeButton_Click" HorizontalAlignment="Left" Margin="342,297,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="buttonDelete" Content="Delete Account" Click="ButtonDelete_Click" Background="Red" HorizontalAlignment="Left" Margin="601,297,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Page>

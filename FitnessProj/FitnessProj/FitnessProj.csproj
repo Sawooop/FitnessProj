@@ -55,11 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Account.cs" />
-    <Compile Include="Globals.cs" />
-    <Compile Include="LoginMenu.xaml.cs">
+    <Compile Include="Classes\Account.cs" />
+    <Compile Include="Classes\Globals.cs" />
+    <Compile Include="Pages\LoginMenu.xaml.cs">
       <DependentUpon>LoginMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Mood.cs" />
     <Compile Include="Pages\AvatarPage.xaml.cs">
       <DependentUpon>AvatarPage.xaml</DependentUpon>
     </Compile>
@@ -69,8 +70,8 @@
     <Compile Include="Pages\AddMenu.xaml.cs">
       <DependentUpon>AddMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TextFile.cs" />
-    <Page Include="LoginMenu.xaml">
+    <Compile Include="Classes\TextFile.cs" />
+    <Page Include="Pages\LoginMenu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -112,7 +113,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Mood.cs" />
     <Compile Include="Classes\PointsNeeded.cs" />
     <Compile Include="Pages\SettingsMenu.xaml.cs">
       <DependentUpon>SettingsMenu.xaml</DependentUpon>
@@ -143,10 +143,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="gear.png" />
+    <Resource Include="Images\gear.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

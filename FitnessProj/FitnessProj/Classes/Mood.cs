@@ -31,9 +31,12 @@ namespace FitnessProj
         //fix below
         private static Mood _currentMood;
 
-        public static Mood currentMood {
-            get {
-                if (_currentMood == null) {
+        public static Mood currentMood
+        {
+            get
+            {
+                if (_currentMood == null)
+                {
                     _currentMood = new Mood();
                 }
                 return _currentMood;
