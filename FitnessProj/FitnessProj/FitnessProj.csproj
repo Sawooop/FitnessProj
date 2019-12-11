@@ -60,7 +60,6 @@
     <Compile Include="Pages\LoginMenu.xaml.cs">
       <DependentUpon>LoginMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Mood.cs" />
     <Compile Include="Pages\AvatarPage.xaml.cs">
       <DependentUpon>AvatarPage.xaml</DependentUpon>
     </Compile>
@@ -113,7 +112,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\PointsNeeded.cs" />
     <Compile Include="Pages\SettingsMenu.xaml.cs">
       <DependentUpon>SettingsMenu.xaml</DependentUpon>
     </Compile>

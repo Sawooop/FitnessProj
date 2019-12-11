@@ -11,7 +11,6 @@
     <Grid Name="MenuGrid">
 
         <ProgressBar x:Name="LevelBar" Value="0" BorderThickness="25" Margin="275,286,275,105"></ProgressBar>
-        <Button x:Name="tempDisplay" Click="TempDisplay_Click" Content="Display current logbook" HorizontalAlignment="Left" Margin="10,377,0,0" VerticalAlignment="Top" Width="159" Height="63"/>
         <TextBlock x:Name="textBlockLevel" FontSize="20" HorizontalAlignment="Left" Margin="275,90,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="250"/>
         <TextBlock x:Name="textBlockProgress" FontSize="15" HorizontalAlignment="Left" Margin="275,364,0,0" TextWrapping="Wrap" Text="progress" VerticalAlignment="Top" Width="250" Height="50"/>
     </Grid>
