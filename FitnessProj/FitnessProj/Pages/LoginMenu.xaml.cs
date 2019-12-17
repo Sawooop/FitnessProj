@@ -68,5 +68,10 @@ namespace FitnessProj
                 MessageBox.Show("created new account");
             }
         }
+
+        private void TextBoxUsername_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

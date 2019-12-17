@@ -9,11 +9,11 @@
       Title="AddMenu">
 
     <Grid>
-        <TextBox x:Name="textBoxExerciseType" HorizontalAlignment="Left" Height="56"  Text="Exercise Type" Margin="190,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxUnitName" HorizontalAlignment="Left" Height="56" Margin="448,70,0,0" TextWrapping="Wrap" Text="Exercise Name" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxUnitValue" HorizontalAlignment="left" Height="56" Margin="190,182,0,0" TextWrapping="Wrap" Text="Total Exercise Value" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxUnitNumber" HorizontalAlignment="Left" Height="56" Margin="448,182,0,0" TextWrapping="Wrap" Text="Number of Times done" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Click="Button_Click" Content="Save" HorizontalAlignment="Left"  Margin="343,280,0,0" VerticalAlignment="Top" Width="74"/>
-        <TextBlock x:Name="textBlockInfo" Text="This input is for your value of your exercise. For a balanced value, use 1 step = 1 point." HorizontalAlignment="Left" Margin="88,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"/>
+        <TextBox x:Name="textBoxExerciseType" HorizontalAlignment="Left" Height="65" FontSize="15" Text="Exercise Type" Margin="190,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="textBoxUnitName" HorizontalAlignment="Left" Height="65" FontSize="15" Margin="448,70,0,0" TextWrapping="Wrap" Text="Exercise Name" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="textBoxUnitValue" HorizontalAlignment="left" Height="65" FontSize="15" Margin="190,182,0,0" TextWrapping="Wrap" Text="Total Exercise Value" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="textBoxUnitNumber" HorizontalAlignment="Left" Height="65" FontSize="15" Margin="448,182,0,0" TextWrapping="Wrap" Text="Number of Times done" VerticalAlignment="Top" Width="130"/>
+        <Button x:Name="button" FontSize="30"  Click="Button_Click" Content="Save" HorizontalAlignment="Left"  Margin="328,278,0,0" VerticalAlignment="Top" Width="108" Height="48"/>
+        <TextBlock x:Name="textBlockInfo" Text="This input is for your value of your exercise. For a balanced value, use 1 step = 1 point." HorizontalAlignment="Left" Margin="88,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"/>
     </Grid>
 </Page>

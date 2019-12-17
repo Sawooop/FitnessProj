@@ -27,6 +27,7 @@ namespace FitnessProj.Pages
 
         private void DarkModeButton_Click(object sender, RoutedEventArgs e)
         {
+            /*
             if(Globals.isDarkMode == false)
             {
 
@@ -50,6 +51,7 @@ namespace FitnessProj.Pages
                     //Color textColor = (Color)ColorConverter.ConvertFromString(); 
                 }
             }
+            */
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)

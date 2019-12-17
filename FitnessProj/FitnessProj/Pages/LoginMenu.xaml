@@ -9,10 +9,10 @@
       Title="LoginMenu">
 
     <Grid>
-        
-        <Button x:Name="loginbutton" Content="Log In" Click="Loginbutton_Click" HorizontalAlignment="Left" Margin="364,328,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Height="23" Margin="160,195,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="23" Margin="515,195,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+        <Button x:Name="loginbutton" FontSize="20" Content="Log In" Height="75" Click="Loginbutton_Click" HorizontalAlignment="Left" Margin="302,280,0,0" VerticalAlignment="Top" Width="124"/>
+        <TextBox x:Name="textBoxUsername" FontSize="30" HorizontalAlignment="Left" Height="75" Margin="78,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250" TextChanged="TextBoxUsername_TextChanged"/>
+        <TextBox x:Name="textBoxPassword" FontSize="30" HorizontalAlignment="Left" Height="75" Margin="402,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
 
     </Grid>
 </Page>

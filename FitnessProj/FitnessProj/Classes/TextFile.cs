@@ -112,6 +112,9 @@ namespace FitnessProj
         {
             string docPath = @"C:\Users\Patrick\Documents\";
                 File.Delete(docPath + Globals.index + ".txt");
+                File.Create(docPath + Globals.index + ".txt");
+            
+
         }
     }
 }

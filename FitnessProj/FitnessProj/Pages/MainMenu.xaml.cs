@@ -24,6 +24,7 @@ namespace FitnessProj
         {
             InitializeComponent();
             Globals.updateProgress();
+            //something here
             while (Globals.Progress >= Globals.requiredProgress)
             {
                 Globals.Progress -= Globals.requiredProgress;
@@ -31,7 +32,9 @@ namespace FitnessProj
                 Globals.updateProgress();
 
             }
-            LevelBar.Value = Globals.Progress / 40;
+            LevelBar.Maximum = Globals.requiredProgress;
+            LevelBar.Value = Globals.Progress;
+             
             textBlockLevel.Text = "Level: " + Globals.level;
             textBlockProgress.Text = "Progress to next level: " + Globals.Progress + " / " + Globals.requiredProgress;
         }
