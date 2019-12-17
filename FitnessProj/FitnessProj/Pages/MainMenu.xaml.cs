@@ -37,6 +37,7 @@ namespace FitnessProj
             textBlockLevel.Text = "Level: " + Globals.level;
             textBlockProgress.Text = "Progress to next level: " + Globals.level + " / " + Globals.requiredProgress;
 
+
         }
 
         private void TempDisplay_Click(object sender, RoutedEventArgs e)

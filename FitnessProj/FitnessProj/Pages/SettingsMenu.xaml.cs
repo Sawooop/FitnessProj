@@ -36,9 +36,11 @@ namespace FitnessProj.Pages
                     Background = backgroundColor;
                 //Globals.fList[Globals.fList.Count - 1].name
                 //Color textColor = (Color)ColorConverter.ConvertFromString(); 
-                //Globals.isDarkMode = true;
-            } else
-            {
+                Globals.isDarkMode = true;
+                
+            } 
+            if (Globals.isDarkMode == true)
+                {
                 Globals.isDarkMode = false;
                 if (Globals.isDarkMode == false)
                 {

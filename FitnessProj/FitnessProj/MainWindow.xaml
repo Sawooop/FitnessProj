@@ -17,7 +17,7 @@
                 <MenuItem x:Name="Test6" Click="Test6_Click" Height="60" Width="84"/>
                 <MenuItem x:Name="SettingsMenu" Header="Settings" Click="SettingsMenu_Click"  Height="60" Width="84"/>
             </Menu>
-            <Frame x:Name="main" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="424" Margin="84,-2,0,0" VerticalAlignment="Top" Width="711"/>
+            <Frame x:Name="main" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="424" Margin="84,-2,0,0" VerticalAlignment="Top" Width="711" />
         </Grid>
     </Viewbox>
 </Window>
