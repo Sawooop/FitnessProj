@@ -23,29 +23,20 @@ namespace FitnessProj
         public MainMenu()
         {
             InitializeComponent();
-            while (Globals.Progress >= 4000)
+            Globals.updateProgress();
+            //something here
+            while (Globals.Progress >= Globals.requiredProgress)
             {
-                Globals.Progress -= 4000;
+                Globals.Progress -= Globals.requiredProgress;
                 Globals.level += 1;
+                Globals.updateProgress();
 
             }
-            LevelBar.Value = Globals.Progress / 40;
+            LevelBar.Maximum = Globals.requiredProgress;
+            LevelBar.Value = Globals.Progress;
+             
             textBlockLevel.Text = "Level: " + Globals.level;
-            textBlockProgress.Text = "Progress to next level: " + Globals.level + " / " + Globals.requiredProgress;
-
-            LevelBar.Value = Globals.Progress / 40;
-            textBlockLevel.Text = "Level: " + Globals.level;
-            textBlockProgress.Text = "Progress to next level: " + Globals.level + " / " + Globals.requiredProgress;
-
-
-        }
-
-        private void TempDisplay_Click(object sender, RoutedEventArgs e)
-        {
-            foreach(FitnessType f in Globals.fList)
-            {
-                MessageBox.Show("Exercise name: "+f.name + System.Environment.NewLine + "Exercise Name: " + f.unitName + Environment.NewLine + "Number of Times Done: " + f.numberOfUnits.ToString());
-            }
+            textBlockProgress.Text = "Progress to next level: " + Globals.Progress + " / " + Globals.requiredProgress;
         }
     }
 }

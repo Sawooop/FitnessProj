@@ -27,6 +27,7 @@ namespace FitnessProj.Pages
 
         private void DarkModeButton_Click(object sender, RoutedEventArgs e)
         {
+            /*
             if(Globals.isDarkMode == false)
             {
 
@@ -50,6 +51,20 @@ namespace FitnessProj.Pages
                     Background = backgroundColor;
                     //MainMenu.Foreground = textColor;
                     //Color textColor = (Color)ColorConverter.ConvertFromString(); 
+                }
+            }
+            */
+        }
+
+        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (Account a in Globals.aList)
+            {
+                if(a.index == Globals.index)
+                {
+                    Globals.aList.Remove(a);
+                    TextFile.Delete();
+                    return;
                 }
             }
         }

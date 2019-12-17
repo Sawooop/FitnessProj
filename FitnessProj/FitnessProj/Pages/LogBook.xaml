@@ -9,6 +9,6 @@
       Title="LogBook">
 
     <Grid>
-        <DataGrid x:Name="dataGridLogBook" HorizontalAlignment="Left" Height="355" Margin="213,50,0,0" VerticalAlignment="Top" Width="351" Loaded="DataGridLogBook_Loaded"/>
+        <DataGrid x:Name="dataGridLogBook" HorizontalAlignment="Left" Height="355" Margin="213,50,0,0" VerticalAlignment="Top" Width="351" Loaded="DataGridLogBook_Loaded" SelectionChanged="DataGridLogBook_SelectionChanged"/>
     </Grid>
 </Page>

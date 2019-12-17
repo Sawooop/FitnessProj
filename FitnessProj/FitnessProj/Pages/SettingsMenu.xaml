@@ -9,7 +9,7 @@
       Title="SettingsMenu">
 
     <Grid>
-        <Button x:Name="DarkModeButton" Content="Dark Mode" Click="DarkModeButton_Click" HorizontalAlignment="Left" Margin="342,297,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="buttonDelete"  Content="Delete Account Data" FontSize="25" Click="ButtonDelete_Click" Background="Red" HorizontalAlignment="Left" Margin="209,204,0,0" VerticalAlignment="Top" Width="241" Height="72"/>
 
     </Grid>
 </Page>

@@ -9,13 +9,13 @@
     <Viewbox Stretch="Fill">
         <Grid>
             <Menu x:Name="menu" HorizontalAlignment="Left" Height="424" Margin="0,0,0,0" VerticalAlignment="Top" Width="84">
-                <MenuItem x:Name="MainMenu" Header="Main Menu" Click="MainMenu_Click"  Height="60" Width="84"/>
-                <MenuItem x:Name="AddMenu" Header="Add Menu" Click="AddMenu_Click"  Height="60" Width="84"/>
-                <MenuItem x:Name="LogBook" Header="Log Book" Click="LogBook_Click" Height="60" Width="84"/>
-                <MenuItem x:Name="Test4" Header ="Avatar Page" Click="Test4_Click" Height="60" Width="84"/>
-                <MenuItem x:Name="Test5" Click="Test5_Click"  Height="60" Width="84"/>
-                <MenuItem x:Name="Test6" Click="Test6_Click" Height="60" Width="84"/>
-                <MenuItem x:Name="SettingsMenu" Header="Settings" Click="SettingsMenu_Click"  Height="60" Width="84"/>
+                <MenuItem x:Name="MainMenu" Header="Main Menu" FontSize="13" FontWeight="DemiBold" Click="MainMenu_Click"  Height="60" Width="84"/>
+                <MenuItem x:Name="AddMenu" Header="Add Menu" FontSize="13" FontWeight="DemiBold" Click="AddMenu_Click"  Height="60" Width="84"/>
+                <MenuItem x:Name="LogBook" Header="Log Book" FontSize="13" FontWeight="DemiBold" Click="LogBook_Click" Height="60" Width="84"/>
+                <MenuItem x:Name="Test4" Header ="Avatar Page" FontSize="13" FontWeight="DemiBold" Click="Test4_Click" Height="60" Width="84"/>
+                <MenuItem x:Name="Test5" Click="Test5_Click" FontSize="13" FontWeight="DemiBold"  Height="60" Width="84"/>
+                <MenuItem x:Name="SettingsMenu" Header="Settigs" FontSize="13" FontWeight="DemiBold" Click="SettingsMenu_Click" Height="60" Width="84"/>
+                <MenuItem x:Name="Logout" Header="Log Out" FontSize="13" FontWeight="DemiBold" Click="Logout_Click" Background="#FF007ACC"  Height="64" Width="84"/>
             </Menu>
             <Frame x:Name="main" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="424" Margin="84,-2,0,0" VerticalAlignment="Top" Width="711" />
         </Grid>

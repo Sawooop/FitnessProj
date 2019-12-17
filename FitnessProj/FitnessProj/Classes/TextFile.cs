@@ -104,14 +104,17 @@ namespace FitnessProj
                     {
                     converterList.Remove(converterList[0]);
                     }
-
                 }
-
-
-
-
             }
-          
+        }
+
+        public static void Delete()
+        {
+            string docPath = @"C:\Users\Patrick\Documents\";
+                File.Delete(docPath + Globals.index + ".txt");
+                File.Create(docPath + Globals.index + ".txt");
+            
+
         }
     }
 }
